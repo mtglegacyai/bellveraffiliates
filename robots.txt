@@ -26,6 +26,7 @@ User-agent: CCBot
 User-agent: cohere-ai
 Allow: /
 Disallow: /mercedes/
+Disallow: /mikerudie/
 Disallow: /william/
 
 Sitemap: https://bellveraffiliates.com/sitemap.xml
