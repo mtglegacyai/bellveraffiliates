@@ -1,0 +1,45 @@
+# Bellver Affiliates by MTG
+
+> An independent, plain-words guide to the Bellver Card, a crypto-funded payment card (fund it with USDT or USDC, spend in any currency), written by MTG (Musa The Giant), a Bellver affiliate. It covers how the card works, every price and fee, the rewards program (one-time referral commissions and the 2x2 matrix monthly rewards with the $100 a month rule), step-by-step video tutorials and short explainer videos. It is not the official Bellver website.
+
+Key facts (from Bellver's official price list and compensation plan, version 08/2026, and Bellver's October 2026 update):
+
+- Four card levels, one-time price: Basic $99, Premium $270, Business $490, Gold $990. No monthly or annual fee listed.
+- Fees: 3.9% card top-up fee (added on top of the amount loaded), 1.75% per transaction, 2% ATM withdrawal.
+- Physical card: Visa (ATM cash, shipping $85 Europe, $149 rest of world). Virtual card: Mastercard, usable the same day.
+- Funds sit in the cardholder's own non-custodial Fireblocks wallet, protected by their private key.
+- Referral commissions (one-time): $10 Basic, $100 Premium, $200 Business, $400 Gold; Special Edition $150, $300, $500.
+- Monthly rewards: 0.1% of completed top-ups in the cardholder's 2x2 matrix, for those holding Premium or higher with two direct Premium+ referrals, who load at least $100 onto their own card that month. Missing it three months in a row loses the matrix position. Rewards are never guaranteed.
+
+Order link used on this site (MTG's referral link): https://app.bellvercards.com?ref=mtg
+
+## Guide pages
+
+- [Bellver Card: The Crypto Card That Can Pay Your Bills](https://bellveraffiliates.com/): Order the Bellver Card from $99. A crypto-funded card (Visa physical, Mastercard virtual) with limits up to $250,000 a day, your own private-key wallet and monthly rewards when your referrals use their cards.
+- [Bellver Card PDF Documents: Price List, Compensation Plan, Slides](https://bellveraffiliates.com/docs/): Download the official Bellver Card price list, compensation plan and 20-slide presentation (version 08/2026) as PDFs.
+- [Bellver Card Explainer Videos: Your Money, Which Card, the 2x2 Matrix, Your First Week and 10 Reasons](https://bellveraffiliates.com/explainers/): Short explainer videos by MTG: where your Bellver money really sits, which Bellver card is right for you, the 2x2 matrix rewards plan, your first week as a partner, and the 10 reasons people choose the card with Bellver's roadmap, with key moments and full transcripts.
+- [Bellver Card FAQ: Fees, Limits, Wallet and Rewards Answered](https://bellveraffiliates.com/faq/): Answers to common Bellver Card questions: cost, monthly fees, limits, funding with crypto, who controls your money, Apple Pay, upgrades, rewards, payouts, plus a glossary.
+- [How to Order a Bellver Card: Step-by-Step Setup Guide](https://bellveraffiliates.com/get-started/): Order your Bellver Card in seven steps: register, secure your account, fund your Fireblocks wallet with USDT or USDC, choose your card, load it, share your link and withdraw.
+- [How the Bellver Card Works: Wallet, Funding and Security](https://bellveraffiliates.com/how-it-works/): How the Bellver Card works: your own Fireblocks non-custodial wallet, funding with USDT or USDC, physical vs virtual cards, the Special Edition and who is behind it.
+- [Bellver Card Guide: Everything About the Card in One Place](https://bellveraffiliates.com/learn/): Your complete Bellver Card guide by MTG: how it works, prices and fees, the rewards program, a setup guide, presentation and tutorial videos, FAQ and official PDFs.
+- [Bellver 2x2 Matrix Explained Simply: Spillover, Levels, 0.1% Rewards](https://bellveraffiliates.com/matrix/): The Bellver Card 2x2 matrix in plain words: two seats under everyone, reading-order filling, spillover, doubling levels, 0.1% rewards, star ranks and the $100 rule. With a playable diagram, calculator, quiz and free PDF.
+- [Become a Bellver Card Partner: How to Share It and Earn](https://bellveraffiliates.com/partner/): How to share the Bellver Card and earn commissions: made for TikTok LIVE hosts and creators with a trusting audience, the $10 to $500 direct commissions, a first-week plan, honest sharing rules and a plain explanation of what partner means.
+- [Bellver Card Payback Calculator: Can Referrals Cover Your Card?](https://bellveraffiliates.com/payback-calculator/): Free Bellver Card payback calculator: pick your card, your referrals' card and how many people order through your link to see when your card pays for itself.
+- [Bellver Card Prices, Fees and Limits (2026)](https://bellveraffiliates.com/prices/): Bellver Card prices: Basic $99, Premium $270, Business $490, Gold $990. Daily limits up to $250,000, fees of 3.9% top-up, 1.75% per transaction, 2% ATM, plus add-ons and upgrades.
+- [Bellver Card Rewards Calculator: Estimate Your 0.1% Monthly Rewards](https://bellveraffiliates.com/rewards-calculator/): Free Bellver Card rewards calculator: choose your rank, cardholders in your paid levels and their average top-up to see how the 0.1% monthly reward works. Illustration only, not a promise.
+- [Bellver Card Rewards Program and 2x2 Matrix Explained](https://bellveraffiliates.com/rewards/): The Bellver Card rewards program in plain words: direct commissions from $10 to $500, 0.1% monthly rewards per level in a 2x2 matrix, star ranks, the $100 monthly rule and honest math.
+- [Bellver Card Tutorial Videos: Register, Secure, Fund, Order, Your Dashboard and Top Up](https://bellveraffiliates.com/tutorials/): Step-by-step Bellver Card tutorials by MTG: register, secure your account with 2FA, back up your Web3 wallet private key, fund your wallet and order your card, a full tour of your dashboard, then top up your card with the 3.9% fee explained. Click by click, with transcripts.
+- [Bellver Card Presentation Videos: 3 Minute, 27 Minute and Launch Webinar](https://bellveraffiliates.com/videos/): Watch the official Bellver Card presentations in English: the 3-minute overview, the 27-minute presentation and the launch webinar, each with a short written summary.
+
+## PDF documents
+
+- [The Bellver 2x2 matrix explained (by MTG)](https://bellveraffiliates.com/docs/bellver-2x2-matrix-explained-by-mtg.pdf)
+- [Bellver Card compensation plan (official, version 08/2026)](https://bellveraffiliates.com/docs/bellver-card-compensation-plan.pdf)
+- [Bellver Card presentation slides (official)](https://bellveraffiliates.com/docs/bellver-card-presentation.pdf)
+- [Bellver Card price list (official, version 08/2026)](https://bellveraffiliates.com/docs/bellver-card-price-list.pdf)
+- [Bellver Starter Checklist (by MTG)](https://bellveraffiliates.com/docs/bellver-starter-checklist.pdf)
+
+## Optional
+
+- [About MTG](https://www.musathegiant.com/about.html): who writes this guide
+- [Earnings disclaimer](https://www.musathegiant.com/earnings-disclaimer.html)
