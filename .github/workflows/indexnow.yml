@@ -22,7 +22,7 @@ jobs:
         run: |
           for i in $(seq 1 60); do
             s=$(gh run list -R "$GITHUB_REPOSITORY" -L 10 --json headSha,status,conclusion,workflowName \
-                -q ".[] | select(.headSha==\"$GITHUB_SHA\" and .workflowName==\"pages build and deployment\") | \"\(.status) \(.conclusion)\"" | head -1)
+                -q ".[] | select(.headSha==\"$GITHUB_SHA\" and (.workflowName==\"pages-build-deployment\" or .workflowName==\"pages build and deployment\")) | \"\(.status) \(.conclusion)\"" | head -1)
             echo "pages: ${s:-not started}"
             case "$s" in "completed success") exit 0;; "completed "*) echo "Pages did not publish"; exit 1;; esac
             sleep 15
