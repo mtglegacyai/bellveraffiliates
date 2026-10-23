@@ -1,0 +1,32 @@
+# After every publish to main: wait for GitHub Pages to go live, then tell Bing (IndexNow) which pages changed.
+# Source of truth: musathegiant/cards/bellvercards/_build/bva_github/ (copied here by the builder).
+name: IndexNow
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:      # run by hand from the Actions tab: sends every page in the sitemap
+permissions:
+  contents: read
+  actions: read
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Wait for GitHub Pages to publish this commit
+        if: github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 60); do
+            s=$(gh run list -R "$GITHUB_REPOSITORY" -L 10 --json headSha,status,conclusion,workflowName \
+                -q ".[] | select(.headSha==\"$GITHUB_SHA\" and .workflowName==\"pages build and deployment\") | \"\(.status) \(.conclusion)\"" | head -1)
+            echo "pages: ${s:-not started}"
+            case "$s" in "completed success") exit 0;; "completed "*) echo "Pages did not publish"; exit 1;; esac
+            sleep 15
+          done
+          echo "Pages took too long"; exit 1
+      - name: Tell Bing which pages changed
+        run: python3 .github/indexnow.py
