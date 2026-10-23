@@ -180,7 +180,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="/images/bellver-card-black-visa.webp" fetchpriority="high">
-<link rel="stylesheet" href="/assets/bellver.css?v=1445f645">
+<link rel="stylesheet" href="/assets/bellver.css?v=e6b5be4b">
 <style>
 .side .srow{grid-template-columns:repeat(2,minmax(0,1fr))}
 .team-btns{display:flex;flex-direction:column;gap:12px;align-items:stretch}
@@ -222,7 +222,13 @@ addEventListener("hashchange",function(){setTimeout(tidy,60);});}catch(e){}})();
      <a class="btn btn-ghost" href="#watch" data-play="#v3"><span class="play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5L7 4.5z" fill="currentColor"/></svg></span>Watch the 3-minute video</a>
     </div>
    </div>
-   <div class="stage" data-tilt=".c-main" data-max="16" aria-hidden="true">
+   <div class="hero-vid rv">
+    <div class="player mx-video mx-herovid mfit" id="p-hero-video" role="button" tabindex="0" aria-label="Play: The Bellver Card lifestyle, a video by Mercedes" data-src="/mercedes/hero-video.mp4" data-title="The Bellver Card lifestyle, a video by Mercedes">
+     <img src="/mercedes/hero-video.webp" alt="The Bellver Card lifestyle, a video by Mercedes, video thumbnail" width="720" height="404" fetchpriority="high">
+     <span class="pbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5L7 4.5z" fill="currentColor"/></svg></span><span class="plabel">0:47</span>
+    </div>
+    <p class="mx-vcap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>Watch my Bellver Card video</p>
+   </div><div class="stage" data-tilt=".c-main" data-max="16" aria-hidden="true" hidden>
     <div class="glow"></div><div class="ring"></div><div class="ring"></div>
     <div class="card3d c-back"><img src="/images/bellver-card-special-edition-700.webp" alt="" width="700" height="416"></div>
     <div class="card3d c-main"><div class="float"><img src="/images/bellver-card-black-visa.webp" alt="" width="1087" height="654" fetchpriority="high"><span class="sweep"></span><span class="glare"></span></div></div>

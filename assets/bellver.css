@@ -1671,3 +1671,8 @@ details.qa[hidden]{display:none}
 .ck-ped{margin:-8px 0 -6px -6px}
 .mx-quick .ped-sm,.mx-pay .ped-sm{margin:-8px 0 6px -8px}
 @media (max-width:760px){.ped-feat{transform:scale(.85);transform-origin:top right}}
+
+/* a team member's own hero video (team.json "hero_video"), in place of the card art */
+.stage[hidden]{display:none!important}
+.hero-vid{position:relative;z-index:1}
+.hero-vid .mx-vcap{margin-top:14px}
