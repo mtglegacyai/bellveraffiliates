@@ -5,7 +5,7 @@
 Key facts (from Bellver's official price list and compensation plan, version 08/2026, and Bellver's October 2026 update):
 
 - Four card levels, one-time price: Basic $99, Premium $270, Business $490, Gold $990. No monthly or annual fee listed.
-- Fees: 3.9% card top-up fee (added on top of the amount loaded), 1.75% per transaction, 2% ATM withdrawal.
+- Fees: 3.9% card top-up fee (taken out of the amount loaded: load $100 and $96.10 reaches the card), 1.75% per transaction, 2% ATM withdrawal.
 - Physical card: Visa (ATM cash, shipping $85 Europe, $149 rest of world). Virtual card: Mastercard, usable the same day.
 - Funds sit in the cardholder's own non-custodial Fireblocks wallet, protected by their private key.
 - Referral commissions (one-time): $10 Basic, $100 Premium, $200 Business, $400 Gold; Special Edition $150, $300, $500.
