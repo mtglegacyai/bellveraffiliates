@@ -540,3 +540,15 @@ onScroll();
   onScroll();
   var y=d.querySelector('[data-year]'); if(y) y.textContent=new Date().getFullYear();
 })();
+/* Downloads page: copy the share message (MTG, 27 Oct 2026) */
+(function(){
+  document.querySelectorAll('[data-copybox]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var box=document.getElementById(b.getAttribute('data-copybox')); if(!box) return;
+      var sp=b.querySelector('span'), old=sp?sp.textContent:'';
+      var ok=function(){if(sp) sp.textContent='Copied. Paste it in WhatsApp'; b.classList.add('done'); setTimeout(function(){if(sp) sp.textContent=old; b.classList.remove('done');},2400);};
+      var fallback=function(){box.focus(); box.select(); try{document.execCommand('copy'); ok();}catch(e){}};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(box.value).then(ok,fallback);} else fallback();
+    });
+  });
+})();
