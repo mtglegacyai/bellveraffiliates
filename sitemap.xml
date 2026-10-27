@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url><loc>https://bellveraffiliates.com/</loc><lastmod>2026-10-27</lastmod>
+    <video:video><video:thumbnail_loc>https://bellveraffiliates.com/images/mtg-bellver-card-ad-thumbnail.jpg</video:thumbnail_loc><video:title>Your bank card cannot do this! The Bellver Card, a video by MTG</video:title><video:description>MTG shows what the Bellver Card can do: tap and pay with the card or a phone, cash at an ATM, a real receipt, loading with USDT or USDC, spending anywhere in the world, and your own wallet keys.</video:description><video:content_loc>https://bellveraffiliates.com/videos/mtg-bellver-card-ad.mp4</video:content_loc><video:duration>36</video:duration><video:publication_date>2026-10-24T09:00:00+02:00</video:publication_date></video:video>
     <video:video><video:thumbnail_loc>https://bellveraffiliates.com/images/bellver-card-3-minute-video-thumbnail.webp</video:thumbnail_loc><video:title>Bellver Card in 3 minutes</video:title><video:description>A quick overview of the Bellver Card: limits, privacy, physical and virtual cards, and the rewards program.</video:description><video:content_loc>https://bellveraffiliates.com/videos/bellvercard-in-3minutes.mp4</video:content_loc><video:duration>211</video:duration><video:publication_date>2026-10-06T09:00:00+02:00</video:publication_date></video:video>
   </url>
   <url><loc>https://bellveraffiliates.com/docs/</loc><lastmod>2026-10-27</lastmod>
