@@ -1728,3 +1728,15 @@ details.qa[hidden]{display:none}
  .sharepanel .btn-row .btn{flex:1 1 auto;justify-content:center}
 }
 @media (prefers-reduced-motion:reduce){.qgthumb,.dlrow{transition:none;transform:none}}
+
+/* ---- MTG's socials (bellveraffiliates.com, MTG's pages only; 28 Oct 2026) ---- */
+.fsoc{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:16px}
+.fsoc-l{color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.fsoc-a{display:flex;flex-wrap:wrap;gap:8px}
+.fsoc a{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 14px;border:1px solid var(--line-2);border-radius:12px;background:rgba(12,26,18,.55);color:var(--soft);font-size:.84rem;font-weight:800;transition:border-color .2s,color .2s,transform .25s var(--ease),background .2s}
+.fsoc a svg{width:18px;height:18px;flex:none}
+.fsoc a:hover,.fsoc a:focus-visible{border-color:var(--green-hi);color:#fff;background:rgba(52,204,136,.1);transform:translateY(-2px)}
+.fsoc a:active{transform:translateY(0) scale(.98)}
+.dsoc{justify-content:space-between;margin:0 0 16px;padding:12px 16px;border:1px solid var(--line);border-radius:var(--r-md);background:rgba(8,18,12,.6)}
+@media (max-width:640px){.dsoc{justify-content:center}.fsoc-a{justify-content:center}.fsoc a{padding:0 12px}}
+@media (prefers-reduced-motion:reduce){.fsoc a{transition:none}.fsoc a:hover{transform:none}}
