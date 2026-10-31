@@ -1760,3 +1760,38 @@ details.qa[hidden]{display:none}
 .hdr-act .contact-btn,.dtop-act .contact-btn{display:inline-flex;width:auto}
 .dtop-act .contact-btn{min-height:40px;padding:0 12px}
 @media (max-width:640px){.contact-btn .lbl{display:none}.hdr-act .contact-btn,.dtop-act .contact-btn{padding:0 11px;min-width:42px;justify-content:center}}
+
+/* ---- Phone readability (31 Oct 2026, after a visitor on Ron's site found the small print hard to read on a phone).
+   Desktop is unchanged. Only on pages whose body.phone-readable has class phone-readable (trial on Ron's pages first). Phones: fine print and notes at least 14px, labels and chips at least 13px, nothing tiny. ---- */
+@media (max-width:760px){
+ body.phone-readable .disc,body.phone-readable .fine,body.phone-readable .vnote{font-size:14px;line-height:1.6;color:var(--muted)}
+ body.phone-readable .ftr-bot{font-size:14px}
+ body.phone-readable .sby{font-size:13.5px}
+ body.phone-readable .slabel{font-size:13px}
+ body.phone-readable .snav .tx small{font-size:13.5px;line-height:1.35}
+ body.phone-readable .slink{font-size:13px}
+ body.phone-readable .ts-row span{font-size:13px}
+ body.phone-readable .secnav .sn-toggle .sn-k{font-size:12.5px}
+ body.phone-readable .tier .flag{font-size:12.5px}
+ body.phone-readable .badge{font-size:13.5px}
+ body.phone-readable .badge-ill{font-size:13px}
+ body.phone-readable .tex small,body.phone-readable .tierpick .tp small{font-size:13px}
+ body.phone-readable .pg small{font-size:13px}
+ body.phone-readable .player .plabel{font-size:13.5px}
+ body.phone-readable .tbl thead th{font-size:14px}
+ body.phone-readable .who-tbl thead th{font-size:13px}
+ body.phone-readable .ftr h3{font-size:13px}
+ body.phone-readable .rank .lv{min-width:64px;height:64px}
+ body.phone-readable .rank .lv small{font-size:11px;letter-spacing:.04em}
+ body.phone-readable .btn-sm{font-size:12.5px}
+ body.phone-readable .qa-link span{font-size:13.5px}
+ body.phone-readable .vtx small{font-size:13px}
+ body.phone-readable .comm small,body.phone-readable .comm span{font-size:13px}
+ body.phone-readable .ts-fill span,body.phone-readable .ts-fill b{font-size:13.5px}
+ body.phone-readable .tchips button,body.phone-readable .tool-reset{font-size:14px}
+ body.phone-readable .mx-step,body.phone-readable .gtile .gg,body.phone-readable .dp small,body.phone-readable .nm small,body.phone-readable .mx-jump small{font-size:13px}
+ body.phone-readable .vthumb .vdur,body.phone-readable .mx-chip,body.phone-readable summary .x,body.phone-readable p .ok{font-size:12.5px}
+ body.phone-readable .doc .meta{font-size:13.5px}
+ body.phone-readable .mx-rung .dp small,body.phone-readable .mx-rung .nm small{font-size:13px}
+ body.phone-readable .mx-myth .x,body.phone-readable .mx-myth .ok{font-size:12.5px}
+}
