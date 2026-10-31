@@ -28,6 +28,7 @@ Allow: /
 Disallow: /mercedes/
 Disallow: /mikerudie/
 Disallow: /rashon/
+Disallow: /ronsantoro/
 Disallow: /william/
 
 Sitemap: https://bellveraffiliates.com/sitemap.xml
