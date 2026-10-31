@@ -25,10 +25,11 @@ User-agent: Bytespider
 User-agent: CCBot
 User-agent: cohere-ai
 Allow: /
+Disallow: /DrRaShon/
 Disallow: /mercedes/
 Disallow: /mikerudie/
-Disallow: /rashon/
 Disallow: /ronsantoro/
 Disallow: /william/
+Disallow: /rashon/
 
 Sitemap: https://bellveraffiliates.com/sitemap.xml
