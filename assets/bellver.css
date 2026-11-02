@@ -1832,3 +1832,7 @@ details.qa[hidden]{display:none}
 .tp-cost b{grid-column:1;font:400 2.2rem/1.05 var(--display);color:var(--yellow);letter-spacing:.01em}
 .tp-cost small{grid-column:2;grid-row:1/3;color:var(--soft);font-size:.86rem;line-height:1.5}
 @media (max-width:640px){.tp-cost{grid-template-columns:1fr}.tp-cost small{grid-column:1;grid-row:auto;margin-top:6px}}
+
+/* ---------- a member's own, longer order-button wording (team.json "order_label"; Ron, 2 Nov 2026) ---------- */
+.btn.ord-long{white-space:normal;text-align:center;line-height:1.25;letter-spacing:.06em;padding-top:10px;padding-bottom:10px;text-wrap:balance}
+.btn.ord-long span[aria-hidden]{letter-spacing:0}
