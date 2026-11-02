@@ -1761,40 +1761,68 @@ details.qa[hidden]{display:none}
 .dtop-act .contact-btn{min-height:40px;padding:0 12px}
 @media (max-width:640px){.contact-btn .lbl{display:none}.hdr-act .contact-btn,.dtop-act .contact-btn{padding:0 11px;min-width:42px;justify-content:center}}
 
-/* ---- Phone readability (31 Oct 2026, after a visitor on Ron's site found the small print hard to read on a phone).
-   Desktop is unchanged. Only on pages whose body.phone-readable has class phone-readable (trial on Ron's pages first). Phones: fine print and notes at least 14px, labels and chips at least 13px, nothing tiny. ---- */
+/* ---- Phone readability (31 Oct 2026, after a visitor on Ron's site found the small print hard to read on a phone;
+   2 Nov 2026: made clearly bigger and added a text size button, as people still found it small).
+   Desktop is unchanged. Only on pages whose body has class phone-readable (team.json "phone_readable": Ron's pages).
+   Phones: the whole page is drawn 12.5% larger (body text 18px), and the Aa button in the top bar steps it up to 125% and 140%.
+   Sizes below are in rem so they grow with it. ---- */
+.ts-btn{display:none}
+.ts-toast{display:none}
 @media (max-width:760px){
- body.phone-readable .disc,body.phone-readable .fine,body.phone-readable .vnote{font-size:14px;line-height:1.6;color:var(--muted)}
- body.phone-readable .ftr-bot{font-size:14px}
- body.phone-readable .sby{font-size:13.5px}
- body.phone-readable .slabel{font-size:13px}
- body.phone-readable .snav .tx small{font-size:13.5px;line-height:1.35}
- body.phone-readable .slink{font-size:13px}
- body.phone-readable .ts-row span{font-size:13px}
- body.phone-readable .secnav .sn-toggle .sn-k{font-size:12.5px}
- body.phone-readable .tier .flag{font-size:12.5px}
- body.phone-readable .badge{font-size:13.5px}
- body.phone-readable .badge-ill{font-size:13px}
- body.phone-readable .tex small,body.phone-readable .tierpick .tp small{font-size:13px}
- body.phone-readable .pg small{font-size:13px}
- body.phone-readable .player .plabel{font-size:13.5px}
- body.phone-readable .tbl thead th{font-size:14px}
- body.phone-readable .who-tbl thead th{font-size:13px}
- body.phone-readable .ftr h3{font-size:13px}
- body.phone-readable .rank .lv{min-width:64px;height:64px}
- body.phone-readable .rank .lv small{font-size:11px;letter-spacing:.04em}
- body.phone-readable .btn-sm{font-size:12.5px}
- body.phone-readable .qa-link span{font-size:13.5px}
- body.phone-readable .vtx small{font-size:13px}
- body.phone-readable .comm small,body.phone-readable .comm span{font-size:13px}
- body.phone-readable .ts-fill span,body.phone-readable .ts-fill b{font-size:13.5px}
- body.phone-readable .tchips button,body.phone-readable .tool-reset{font-size:14px}
- body.phone-readable .mx-step,body.phone-readable .gtile .gg,body.phone-readable .dp small,body.phone-readable .nm small,body.phone-readable .mx-jump small{font-size:13px}
- body.phone-readable .vthumb .vdur,body.phone-readable .mx-chip,body.phone-readable summary .x,body.phone-readable p .ok{font-size:12.5px}
- body.phone-readable .doc .meta{font-size:13.5px}
- body.phone-readable .mx-rung .dp small,body.phone-readable .mx-rung .nm small{font-size:13px}
- body.phone-readable .mx-myth .x,body.phone-readable .mx-myth .ok{font-size:12.5px}
+ html:has(body.phone-readable){font-size:112.5%;scroll-padding-top:100px}
+ html[data-ts="l"]:has(body.phone-readable){font-size:125%;scroll-padding-top:110px}
+ html[data-ts="xl"]:has(body.phone-readable){font-size:140%;scroll-padding-top:120px}
+ body.phone-readable{font-size:1rem;min-width:0}
+ body.phone-readable .ts-btn{display:inline-flex;align-items:center;justify-content:center;gap:0;min-width:44px;min-height:40px;padding:0 10px;font-weight:800;letter-spacing:0;text-transform:none}
+ body.phone-readable .ts-btn .a2{margin-left:1px}
+ body.phone-readable .ts-toast{display:block;white-space:nowrap;position:fixed;left:50%;top:84px;z-index:120;transform:translate(-50%,-8px);padding:10px 16px;border-radius:999px;background:rgba(8,18,12,.94);border:1px solid var(--line-2);color:#fff;font-weight:800;font-size:1rem;box-shadow:0 14px 34px rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .25s,transform .3s var(--ease)}
+ body.phone-readable .ts-toast.on{opacity:1;transform:translate(-50%,0)}
+ body.phone-readable .hdr-act .learn-btn{white-space:nowrap;padding:0 12px;letter-spacing:.06em}
+ /* the top bar buttons stay the same size at every text size, so the logo and buttons always fit */
+ body.phone-readable .hdr-act .btn-sm,body.phone-readable .dtop-act .btn-sm{font-size:14px}
+ body.phone-readable .ts-btn .a1{font-size:14.5px}
+ body.phone-readable .ts-btn .a2{font-size:21px}
+ body.phone-readable .dtop-act .gohome{font-size:0;gap:0;padding:0 11px;min-width:44px;justify-content:center}
+ body.phone-readable .dtop-act .gohome .emo{font-size:22px}
+ body.phone-readable .phero h1{font-size:min(41.6px,11.6vw)}
 }
+@media (max-width:420px){
+ body.phone-readable .hdr-act .learn-btn svg{display:none}
+}
+@media (max-width:760px){
+ body.phone-readable .hero h1{font-size:clamp(48px,15.5vw,73.6px)}
+ body.phone-readable .disc,body.phone-readable .fine,body.phone-readable .vnote{font-size:0.875rem;line-height:1.6;color:var(--muted)}
+ body.phone-readable .ftr-bot{font-size:0.875rem}
+ body.phone-readable .sby{font-size:0.8438rem}
+ body.phone-readable .slabel{font-size:0.8125rem}
+ body.phone-readable .snav .tx small{font-size:0.8438rem;line-height:1.35}
+ body.phone-readable .slink{font-size:0.8125rem}
+ body.phone-readable .ts-row span{font-size:0.8125rem}
+ body.phone-readable .secnav .sn-toggle .sn-k{font-size:0.7812rem}
+ body.phone-readable .tier .flag{font-size:0.7812rem}
+ body.phone-readable .badge{font-size:0.8438rem}
+ body.phone-readable .badge-ill{font-size:0.8125rem}
+ body.phone-readable .tex small,body.phone-readable .tierpick .tp small{font-size:0.8125rem}
+ body.phone-readable .pg small{font-size:0.8125rem}
+ body.phone-readable .player .plabel{font-size:0.8438rem}
+ body.phone-readable .tbl thead th{font-size:0.875rem}
+ body.phone-readable .who-tbl thead th{font-size:0.8125rem}
+ body.phone-readable .ftr h3{font-size:0.8125rem}
+ body.phone-readable .rank .lv{min-width:4rem;height:4rem}
+ body.phone-readable .rank .lv small{font-size:0.6875rem;letter-spacing:.04em}
+ body.phone-readable .btn-sm{font-size:0.7812rem}
+ body.phone-readable .qa-link span{font-size:0.8438rem}
+ body.phone-readable .vtx small{font-size:0.8125rem}
+ body.phone-readable .comm small,body.phone-readable .comm span{font-size:0.8125rem}
+ body.phone-readable .ts-fill span,body.phone-readable .ts-fill b{font-size:0.8438rem}
+ body.phone-readable .tchips button,body.phone-readable .tool-reset{font-size:0.875rem}
+ body.phone-readable .mx-step,body.phone-readable .gtile .gg,body.phone-readable .dp small,body.phone-readable .nm small,body.phone-readable .mx-jump small{font-size:0.8125rem}
+ body.phone-readable .vthumb .vdur,body.phone-readable .mx-chip,body.phone-readable summary .x,body.phone-readable p .ok{font-size:0.7812rem}
+ body.phone-readable .doc .meta{font-size:0.8438rem}
+ body.phone-readable .mx-rung .dp small,body.phone-readable .mx-rung .nm small{font-size:0.8125rem}
+ body.phone-readable .mx-myth .x,body.phone-readable .mx-myth .ok{font-size:0.7812rem}
+}
+
 
 /* ---------- most benefits: Gold Special Edition (prices page) ---------- */
 .se.toppick:before{background:radial-gradient(600px 300px at 20% 50%,rgba(252,190,37,.16),transparent 70%)}

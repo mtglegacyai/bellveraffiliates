@@ -552,3 +552,13 @@ onScroll();
     });
   });
 })();
+
+/* text size button (Aa), only on pages with the larger phone text (Ron's pages): Normal, Larger, Largest, remembered on this phone */
+(function(){var b=document.querySelector('[data-ts-btn]');if(!b)return;var H=document.documentElement,S=['','l','xl'],N=['Normal','Larger','Largest'],t=null;
+function set(v,show){if(v)H.setAttribute('data-ts',v);else H.removeAttribute('data-ts');var i=S.indexOf(v);
+[].forEach.call(document.querySelectorAll('[data-ts-btn]'),function(x){x.setAttribute('aria-label','Text size: '+N[i]+'. Tap to change')});
+if(show){if(!t){t=document.createElement('div');t.className='ts-toast';t.setAttribute('aria-hidden','true');document.body.appendChild(t)}
+t.textContent='Text size: '+N[i];t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('on')},1600)}}
+var v='';try{v=localStorage.getItem('bv-ts')||''}catch(e){}if(S.indexOf(v)<0)v='';set(v,false);
+document.addEventListener('click',function(e){var x=e.target.closest&&e.target.closest('[data-ts-btn]');if(!x)return;
+var i=(S.indexOf(H.getAttribute('data-ts')||'')+1)%S.length;set(S[i],true);try{localStorage.setItem('bv-ts',S[i])}catch(e){}});})();
