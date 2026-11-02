@@ -8,6 +8,7 @@ Key facts (from Bellver's official price list and compensation plan, version 08/
 - Fees: 3.9% card top-up fee (taken out of the amount loaded: load $100 and $96.10 reaches the card), 1.75% per transaction, 2% ATM withdrawal.
 - Physical card: Visa (ATM cash, shipping $85 Europe, $149 rest of world). Virtual card: Mastercard, usable the same day.
 - Funds sit in the cardholder's own non-custodial Fireblocks wallet, protected by their private key.
+- Most benefits: Gold ($250,000 daily and $20,000 per transaction limits, monthly rewards on up to 20 levels as stars grow) with the Special Edition (+$370, Bellver's highest security and privacy): $1,360 one-time. The Special Edition does not raise limits or levels.
 - Referral commissions (one-time): $10 Basic, $100 Premium, $200 Business, $400 Gold; Special Edition $150, $300, $500.
 - Monthly rewards: 0.1% of completed top-ups in the cardholder's 2x2 matrix, for those holding Premium or higher with two direct Premium+ referrals, who load at least $100 onto their own card that month. Missing it three months in a row loses the matrix position. Rewards are never guaranteed.
 

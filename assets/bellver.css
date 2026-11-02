@@ -1795,3 +1795,12 @@ details.qa[hidden]{display:none}
  body.phone-readable .mx-rung .dp small,body.phone-readable .mx-rung .nm small{font-size:13px}
  body.phone-readable .mx-myth .x,body.phone-readable .mx-myth .ok{font-size:12.5px}
 }
+
+/* ---------- most benefits: Gold Special Edition (prices page) ---------- */
+.se.toppick:before{background:radial-gradient(600px 300px at 20% 50%,rgba(252,190,37,.16),transparent 70%)}
+.toppick .checks{margin:20px 0 22px}
+.tp-cost{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:2px 16px;padding:14px 18px;margin:0 0 22px;border-radius:16px;background:rgba(252,190,37,.07);border:1px solid rgba(252,190,37,.28)}
+.tp-cost span{grid-column:1;color:var(--muted);font-size:.85rem;font-weight:700}
+.tp-cost b{grid-column:1;font:400 2.2rem/1.05 var(--display);color:var(--yellow);letter-spacing:.01em}
+.tp-cost small{grid-column:2;grid-row:1/3;color:var(--soft);font-size:.86rem;line-height:1.5}
+@media (max-width:640px){.tp-cost{grid-template-columns:1fr}.tp-cost small{grid-column:1;grid-row:auto;margin-top:6px}}
