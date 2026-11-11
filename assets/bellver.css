@@ -1836,3 +1836,34 @@ details.qa[hidden]{display:none}
 /* ---------- a member's own, longer order-button wording (team.json "order_label"; Ron, 2 Nov 2026) ---------- */
 .btn.ord-long{white-space:normal;text-align:center;line-height:1.25;letter-spacing:.06em;padding-top:10px;padding-bottom:10px;text-wrap:balance}
 .btn.ord-long span[aria-hidden]{letter-spacing:0}
+
+/* ---------- edge-lit glass (MTG, 10 Nov 2026: "I like this glass style... it can enhance the design, presentation,
+   look, feel, style, and conversions"; 11 Nov 2026: the same style on bellveraffiliates.com, in Bellver green).
+   A few hero places only, never long text or tables: the closing "Let's make it happen" panel (strong, with two sheets
+   peeking out below and a slow light sweep), the main answer of every calculator, and the free checklist and
+   "Stuck? I'll walk you through it" panels (soft, lit up on hover). ---------- */
+.bv-glass{border:1.5px solid rgba(52,204,136,.85);
+  background:linear-gradient(158deg,rgba(52,204,136,.10) 0%,rgba(255,255,255,.028) 34%,rgba(255,255,255,.012) 62%,rgba(52,204,136,.07) 100%),linear-gradient(160deg,#0a1a11,#051009);
+  box-shadow:0 0 28px rgba(52,204,136,.26),0 0 2px rgba(52,204,136,.9),inset 0 0 24px rgba(52,204,136,.13),inset 0 1px 0 rgba(255,255,255,.26),0 34px 80px -20px rgba(0,0,0,.7)}
+.bv-glass:after{content:"";position:absolute;inset:7px;border-radius:calc(var(--r-xl) - 7px);border:1px solid rgba(52,204,136,.32);pointer-events:none}
+.bv-glass.soft{border-color:rgba(52,204,136,.5);box-shadow:0 0 16px rgba(52,204,136,.12),inset 0 0 18px rgba(52,204,136,.07),inset 0 1px 0 rgba(255,255,255,.16),0 30px 70px -20px rgba(0,0,0,.6);transition:border-color .3s,box-shadow .3s}
+.bv-glass.soft:after{border-color:rgba(52,204,136,.16);transition:border-color .3s}
+.bv-glass.soft:hover,.bv-glass.soft:focus-within{border-color:rgba(52,204,136,.9);box-shadow:0 0 28px rgba(52,204,136,.26),0 0 2px rgba(52,204,136,.9),inset 0 0 24px rgba(52,204,136,.13),inset 0 1px 0 rgba(255,255,255,.26),0 34px 80px -20px rgba(0,0,0,.7)}
+.bv-glass.soft:hover:after,.bv-glass.soft:focus-within:after{border-color:rgba(52,204,136,.32)}
+/* the closing panel: two glass sheets peek out below, and a slow light sweep crosses it */
+.bv-stack{position:relative;isolation:isolate;margin-bottom:24px}
+.bv-stack>.sheet{position:absolute;inset:0;border-radius:var(--r-xl);pointer-events:none;z-index:-1;border:1.5px solid rgba(52,204,136,.6);background:rgba(4,14,8,.8);box-shadow:0 0 18px rgba(52,204,136,.16)}
+.bv-stack>.sheet.s1{transform:translateY(12px) scaleX(.975);opacity:.8}
+.bv-stack>.sheet.s2{transform:translateY(24px) scaleX(.95);opacity:.48}
+.bv-sweep{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:1;
+  background:linear-gradient(105deg,transparent 38%,rgba(210,255,232,.07) 47%,rgba(240,255,248,.12) 50%,rgba(210,255,232,.07) 53%,transparent 62%) no-repeat;
+  background-size:260% 100%;background-position:120% 0;animation:bvSweep 8s cubic-bezier(.45,.05,.25,1) 1.4s infinite}
+@keyframes bvSweep{0%{background-position:120% 0}36%,100%{background-position:-60% 0}}
+.final.bv-glass h2 .hap{text-shadow:0 0 26px rgba(52,204,136,.45)}
+/* every calculator: the main answer in glass */
+.tool-screen .ts-main{position:relative;border-radius:16px;
+  background:linear-gradient(158deg,rgba(52,204,136,.16),rgba(52,204,136,.04) 45%,rgba(3,12,7,.95)),#04120a;
+  box-shadow:inset 0 0 0 1.5px rgba(52,204,136,.9),inset 0 0 26px rgba(52,204,136,.2),inset 0 1px 0 rgba(255,255,255,.3),0 0 26px rgba(52,204,136,.28)}
+.tool-screen .ts-main:after{content:"";position:absolute;inset:6px;border-radius:11px;border:1px solid rgba(52,204,136,.35);pointer-events:none}
+.tool-screen .ts-main b{text-shadow:0 0 26px rgba(52,204,136,.6)}
+@media (prefers-reduced-motion:reduce){.bv-sweep{animation:none}.bv-glass.soft{transition:none}}
