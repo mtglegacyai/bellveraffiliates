@@ -1867,3 +1867,28 @@ details.qa[hidden]{display:none}
 .tool-screen.bvg .ts-main:after{content:"";position:absolute;inset:6px;border-radius:11px;border:1px solid rgba(52,204,136,.35);pointer-events:none}
 .tool-screen.bvg .ts-main b{text-shadow:0 0 26px rgba(52,204,136,.6)}
 @media (prefers-reduced-motion:reduce){.bv-sweep{animation:none}.bv-glass.soft{transition:none}}
+
+/* ---------- MTG's own pages only (body.bv-own): nothing scrolls sideways on phones (MTG, 11 Nov 2026) ----------
+   Tables that would not fit their box become labelled cards (assets/bv-own.js adds .stk); the menu's bottom buttons
+   wrap at larger Android text; the partner table's row titles wrap on small phones. */
+.bv-own .tbl.stk{min-width:0}
+.bv-own .tbl.stk thead{display:none}
+.bv-own .tbl.stk,.bv-own .tbl.stk tbody,.bv-own .tbl.stk tr{display:block;width:100%}
+.bv-own .tbl.stk tr{padding:12px 16px;border-bottom:1px solid var(--line)}
+.bv-own .tbl.stk tr:last-child{border-bottom:0}
+.bv-own .tbl.stk th[scope=row]{display:block;width:auto;min-width:0;padding:0 0 8px;border:0;background:none}
+.bv-own .tbl.stk td{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:5px 0;border:0;text-align:right;white-space:normal;overflow-wrap:anywhere;background:none!important}
+.bv-own .tbl.stk td:before{content:attr(data-label);flex:0 1 45%;min-width:0;color:var(--muted);font-size:.78rem;font-weight:800;text-align:left;overflow-wrap:normal}
+.bv-own .tbl.stk td:first-child{font-weight:800;color:#fff}
+.bv-own .tbl.stk td[data-label=""]:before{display:none}
+.bv-own .tbl.stk td.bar{display:none}
+.bv-own .who-tbl.stk td{display:block;text-align:left}
+.bv-own .who-tbl.stk td:before{display:block;margin-bottom:2px}
+.bv-own .who-tbl th[scope=row] .wn{flex-wrap:wrap}
+.bv-own .who-tbl td{overflow-wrap:anywhere}
+.bv-own .srow{grid-template-columns:repeat(2,minmax(0,1fr))}
+.bv-own .slink{white-space:normal;text-align:center;line-height:1.2;padding:6px 8px;min-width:0}
+.bv-own .sgroup{grid-template-columns:minmax(0,1fr)}
+.bv-own .snav{min-width:0}
+.bv-own .tbl.stk td>*{min-width:0}
+.bv-own .od-tbl.stk code.cp{white-space:normal;word-break:break-all}
