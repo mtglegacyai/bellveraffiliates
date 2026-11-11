@@ -1733,9 +1733,9 @@ details.qa[hidden]{display:none}
 .fsoc{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:16px}
 /* in the footer the row sits under the logo and the text, full width (it used to take the logo's column and squeeze the text beside it) */
 .ftr .logo .fsoc{grid-column:1/-1}
-/* MTG's pages only: nothing sticks out sideways at Android's larger text size (calculator fields, long buttons in a narrow column) */
-.bv-own .tfield{grid-template-columns:minmax(0,1fr)}
-@media (min-width:641px){.bv-own .btn-row .btn{max-width:100%;white-space:normal;text-align:center;line-height:1.2;padding-block:10px}}
+/* MTG's pages and his clients' pages (body.bv-team, 11 Nov 2026): nothing sticks out sideways at Android's larger text size (calculator fields, long buttons in a narrow column) */
+.bv-own .tfield,.bv-team .tfield{grid-template-columns:minmax(0,1fr)}
+@media (min-width:641px){.bv-own .btn-row .btn,.bv-team .btn-row .btn{max-width:100%;white-space:normal;text-align:center;line-height:1.2;padding-block:10px}}
 .fsoc-l{color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
 .fsoc-a{display:flex;flex-wrap:wrap;gap:8px}
 .fsoc a{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 14px;border:1px solid var(--line-2);border-radius:12px;background:rgba(12,26,18,.55);color:var(--soft);font-size:.84rem;font-weight:800;transition:border-color .2s,color .2s,transform .25s var(--ease),background .2s}
@@ -1873,27 +1873,29 @@ details.qa[hidden]{display:none}
 .tool-screen.bvg .ts-main b{text-shadow:0 0 26px rgba(52,204,136,.6)}
 @media (prefers-reduced-motion:reduce){.bv-sweep{animation:none}.bv-glass.soft{transition:none}}
 
-/* ---------- MTG's own pages only (body.bv-own): nothing scrolls sideways on phones (MTG, 11 Nov 2026) ----------
+/* ---------- MTG's pages (body.bv-own) and his clients' pages (body.bv-team): nothing scrolls sideways on phones (MTG, 11 Nov 2026) ----------
    Tables that would not fit their box become labelled cards (assets/bv-own.js adds .stk); the menu's bottom buttons
    wrap at larger Android text; the partner table's row titles wrap on small phones. */
-.bv-own .tbl.stk{min-width:0}
-.bv-own .tbl.stk thead{display:none}
-.bv-own .tbl.stk,.bv-own .tbl.stk tbody,.bv-own .tbl.stk tr{display:block;width:100%}
-.bv-own .tbl.stk tr{padding:12px 16px;border-bottom:1px solid var(--line)}
-.bv-own .tbl.stk tr:last-child{border-bottom:0}
-.bv-own .tbl.stk th[scope=row]{display:block;width:auto;min-width:0;padding:0 0 8px;border:0;background:none}
-.bv-own .tbl.stk td{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:5px 0;border:0;text-align:right;white-space:normal;overflow-wrap:anywhere;background:none!important}
-.bv-own .tbl.stk td:before{content:attr(data-label);flex:0 1 45%;min-width:0;color:var(--muted);font-size:.78rem;font-weight:800;text-align:left;overflow-wrap:normal}
-.bv-own .tbl.stk td:first-child{font-weight:800;color:#fff}
-.bv-own .tbl.stk td[data-label=""]:before{display:none}
-.bv-own .tbl.stk td.bar{display:none}
-.bv-own .who-tbl.stk td{display:block;text-align:left}
-.bv-own .who-tbl.stk td:before{display:block;margin-bottom:2px}
-.bv-own .who-tbl th[scope=row] .wn{flex-wrap:wrap}
-.bv-own .who-tbl td{overflow-wrap:anywhere}
-.bv-own .srow{grid-template-columns:repeat(2,minmax(0,1fr))}
-.bv-own .slink{white-space:normal;text-align:center;line-height:1.2;padding:6px 8px;min-width:0}
-.bv-own .sgroup{grid-template-columns:minmax(0,1fr)}
-.bv-own .snav{min-width:0}
-.bv-own .tbl.stk td>*{min-width:0}
-.bv-own .od-tbl.stk code.cp{white-space:normal;word-break:break-all}
+.bv-own .tbl.stk,.bv-team .tbl.stk{min-width:0}
+.bv-own .tbl.stk thead,.bv-team .tbl.stk thead{display:none}
+.bv-own .tbl.stk,.bv-own .tbl.stk tbody,.bv-own .tbl.stk tr,.bv-team .tbl.stk,.bv-team .tbl.stk tbody,.bv-team .tbl.stk tr{display:block;width:100%}
+.bv-own .tbl.stk tr,.bv-team .tbl.stk tr{padding:12px 16px;border-bottom:1px solid var(--line)}
+.bv-own .tbl.stk tr:last-child,.bv-team .tbl.stk tr:last-child{border-bottom:0}
+.bv-own .tbl.stk th[scope=row],.bv-team .tbl.stk th[scope=row]{display:block;width:auto;min-width:0;padding:0 0 8px;border:0;background:none}
+.bv-own .tbl.stk td,.bv-team .tbl.stk td{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:5px 0;border:0;text-align:right;white-space:normal;overflow-wrap:anywhere;background:none!important}
+.bv-own .tbl.stk td:before,.bv-team .tbl.stk td:before{content:attr(data-label);flex:0 1 45%;min-width:0;color:var(--muted);font-size:.78rem;font-weight:800;text-align:left;overflow-wrap:normal}
+.bv-own .tbl.stk td:first-child,.bv-team .tbl.stk td:first-child{font-weight:800;color:#fff}
+.bv-own .tbl.stk td[data-label=""]:before,.bv-team .tbl.stk td[data-label=""]:before{display:none}
+.bv-own .tbl.stk td.bar,.bv-team .tbl.stk td.bar{display:none}
+.bv-own .who-tbl.stk td,.bv-team .who-tbl.stk td{display:block;text-align:left}
+.bv-own .who-tbl.stk td:before,.bv-team .who-tbl.stk td:before{display:block;margin-bottom:2px}
+.bv-own .who-tbl th[scope=row] .wn,.bv-team .who-tbl th[scope=row] .wn{flex-wrap:wrap}
+.bv-own .who-tbl td,.bv-team .who-tbl td{overflow-wrap:anywhere}
+.bv-own .srow,.bv-team .srow{grid-template-columns:repeat(2,minmax(0,1fr))}
+.bv-own .slink,.bv-team .slink{white-space:normal;text-align:center;line-height:1.2;padding:6px 8px;min-width:0}
+.bv-own .sgroup,.bv-team .sgroup{grid-template-columns:minmax(0,1fr)}
+.bv-own .snav,.bv-team .snav{min-width:0}
+.bv-own .tbl.stk td>*,.bv-team .tbl.stk td>*{min-width:0}
+.bv-own .od-tbl.stk code.cp,.bv-team .od-tbl.stk code.cp{white-space:normal;word-break:break-all}
+/* the "Illustration, not a promise" badge may wrap instead of pushing the page wider (Ron's larger text on a 320 px phone) */
+.bv-own .badge-ill,.bv-team .badge-ill{max-width:100%;white-space:normal}

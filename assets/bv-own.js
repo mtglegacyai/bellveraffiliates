@@ -1,10 +1,10 @@
-/* MTG's own Bellver pages only (MTG, 11 Nov 2026: nothing may scroll sideways on a phone; his clients' pages are left
-   as they are). A table stays a normal table when it fits its box; when it would not fit (a phone, a tablet, or larger
+/* MTG's Bellver pages (body.bv-own) and, since 11 Nov 2026, his clients' pages (body.bv-team): nothing may scroll
+   sideways on a phone. A table stays a normal table when it fits its box; when it would not fit (a phone, a tablet, or larger
    Android text) it becomes labelled cards, so the page never scrolls sideways. Every cell carries its column name. */
 (function () {
   'use strict';
   var d = document;
-  function tables() { return d.querySelectorAll('.bv-own table.tbl'); }
+  function tables() { return d.querySelectorAll('.bv-own table.tbl,.bv-team table.tbl'); }
   function over(t) { return t.scrollWidth > t.parentElement.clientWidth + 1; }
   function fit() {                       // full check: as a table first, cards only if it does not fit
     var ts = tables();
