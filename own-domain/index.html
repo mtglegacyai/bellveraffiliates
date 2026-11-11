@@ -143,7 +143,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/assets/bellver.css?v=d44c1e06">
+<link rel="stylesheet" href="/assets/bellver.css?v=f2ebca9a">
 
 </head>
 <body class="bv-own">
@@ -177,7 +177,9 @@
 .od-check{display:flex;gap:10px;align-items:flex-start;margin:14px 0 0;padding:12px 14px;border-radius:12px;background:rgba(52,204,136,.09);border:1px solid rgba(52,204,136,.25);font-size:.95rem}
 .od-check svg{flex:0 0 18px;width:18px;height:18px;margin-top:3px;color:#34cc88}
 code.cp{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.92em;padding:.12em .45em;border-radius:6px;background:rgba(252,190,37,.12);color:#ffd875;border:1px solid rgba(252,190,37,.28);white-space:nowrap;user-select:all}
-.od-side{position:sticky;top:96px;display:grid;gap:16px;align-self:start}
+.od-side{position:sticky;top:96px;display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-self:start}
+.od-side code.cp{white-space:normal;overflow-wrap:anywhere;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+@media (min-width:861px) and (max-width:1099px){.od-side .od-iplist{padding-left:0}.od-side .od-iplist code.cp{font-size:.84rem}}
 .od-ips{border-color:rgba(252,190,37,.45)!important}
 .od-iplist{list-style:none;padding:0;margin:8px 0 14px;display:grid;gap:8px}
 .od-iplist code.cp{font-size:1.02rem}
