@@ -73,10 +73,27 @@ PRIVACY (mask in every frame)
   card balances, the MetaMask balance.
 - His own earnings figures: blur them, or decide with MTG (see below).
 
+MTG's NOTES, PART 2 (15 Nov 2026)
+- In My Wallet, lower down, the linked MetaMask wallet now shows with
+  its own balance; MTG cross-checked it against MetaMask itself and
+  the two match.
+- MTG expects that once the admin approves and processes the request,
+  the payout will show in that linked MetaMask, because the MetaMask
+  address is now connected. This is his expectation, not confirmed:
+  his second recording (after approval) will show what really happens.
+
+PLAN (MTG, 15 Nov 2026)
+- Two silent recordings: recording 1 now (request the payout, link
+  MetaMask), recording 2 after the admin approves (where the money
+  arrives).
+- When recording 1 arrives: save it and map it, do not build yet.
+- When MTG says recording 2 is done: combine both into ONE short,
+  clear tutorial video that shows every step of requesting a
+  withdrawal from Bellver.
+
 OPEN QUESTIONS (MTG will come back with these)
-- What happens after approval: does the payout show in My Wallet only,
-  or also reach the linked MetaMask by itself? MTG said "I will come
-  back and show you this". Do not script this until he confirms.
+- Where the approved payout lands (Bellver wallet, linked MetaMask or
+  both): script it only from what recording 2 shows.
 - Show his real earnings amounts or blur them? Real earnings on screen
   count as earnings proof: fine on his websites and the WhatsApp tribe,
   not for TikTok, YouTube or Facebook.
