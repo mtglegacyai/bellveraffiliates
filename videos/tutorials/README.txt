@@ -73,6 +73,85 @@ PRIVACY (mask in every frame)
   card balances, the MetaMask balance.
 - His own earnings figures: blur them, or decide with MTG (see below).
 
+RECORDING 1 RECEIVED (15 Nov 2026): 11:11, desktop screen 1264 x 624,
+silent. Kept outside the repository (raw recordings never go in it).
+MAP (source time: what it shows: keep / cut)
+0:00-0:19  Dashboard, top: announcement banner, members list   keep short
+0:20-0:22  Withdraw page, quick look before going back        cut
+0:23-0:25  "Live webinar on Tuesday" pop-up                   cut
+0:26-1:07  Dashboard, bottom row of four boxes; points at
+           "Earnings available"                               keep
+1:08-1:22  Telegram app (private chats)                       CUT
+1:23-1:58  Dashboard again                                    trim
+1:59       Left menu: "Withdraw"                              keep
+1:59-2:43  Withdraw page: "Available to withdraw", "Minimum
+           payout $100.00", the Wallet box (Available,
+           Pending, Lifetime paid out, Lifetime earned),
+           "Earnings by type" (Referral, Upgrade, Reward),
+           "How payout works" (4 points), "Payout requests:
+           You haven't requested a payout yet"                keep
+2:44       "Request payout" opens "Request a payout": "[amount]
+           available. An admin reviews every claim by hand."
+           "Amount (blank for everything)", "Minimum $100.00,
+           up to [available]", "Note for the reviewer
+           (optional)", "PAY TO" (address), "Your Bellver
+           wallet. Sent here once an admin approves it.",
+           "Your password", buttons "Request payout", "Cancel" keep
+2:45-3:45  Typing the amount and the note (slow)              speed up
+3:46-4:07  Password, then "Request payout"                    keep, mask
+4:08-4:23  Browser "Save password?" pop-up                    CUT
+4:24       Success: "$0.00" available, "[amount] is held by a
+           request from Nov 15, 2026, awaiting review",
+           Wallet box: Pending                                keep
+4:39       "Payout requests": Requested, Amount, Status
+           "Pending"                                          keep
+4:52-5:10  "My Wallet": "Your embedded wallet across every
+           network", tabs Wallet and Swap; "Your wallet"
+           box: network, Total balance, "Deposit", "Send",
+           "My other wallets", "+ Link new"                   keep
+           (4:55-4:57 "Log in or sign up" wallet list: cut)
+5:40-6:31  MetaMask opened, copying its address               trim
+6:32-7:01  "Send" with Ether (Ethereum detour)                cut
+7:02-7:15  Network switched to BNB                            keep
+7:16       "About this wallet": held by the card platform and
+           funded by your deposits; sending on the wrong
+           network loses the funds permanently; paying for a
+           card spends from this wallet                      keep (tip)
+7:20-8:08  "+ Link new" > "Link a new wallet" > MetaMask >
+           "Connect" > "Update Network" > "Switch Network" >
+           "Sign" (confirm in MetaMask) > MetaMask now listed keep, short
+8:36-8:57  "Send" token list; MetaMask's network addresses   trim
+9:12-9:13  The "Your wallet" box now shows the MetaMask
+           wallet on top, with MetaMask's own balance          keep
+9:18-9:49  Withdraw page again: request "Pending"            trim
+9:58-11:11 My Wallet again, switching wallets, MetaMask      trim
+
+WHAT RECORDING 1 SHOWS ABOUT WHERE THE PAYOUT GOES
+- "PAY TO" on the request is the Bellver wallet (the address that
+  ends in 6611), with the line "Your Bellver wallet. Sent here once
+  an admin approves it."
+- Linking MetaMask afterwards puts MetaMask on top of the "Your
+  wallet" box and moves the Bellver wallet to "My other wallets".
+  It does not change the "PAY TO" of a request already made.
+- So after approval the money should show on the Bellver wallet
+  (pick it in the wallet box), and from there "Send" moves it to
+  MetaMask on BNB Smart Chain. Recording 2 should show exactly this.
+
+THE CONFIRMATION EMAIL (MTG's screenshot, 15 Nov 2026)
+- From BellverCards <no-reply@bellvercards.com>, subject "We received
+  your payout request for USDT [amount]".
+- "It is with an operator now. Payouts are reviewed by hand, so this
+  is not instant. You will hear from us when it is approved or
+  declined." Button "Open in dashboard" (app.bellvercards.com/withdraw).
+- Use it as a short step with name and amount masked. Script advice:
+  open the dashboard yourself rather than from an email link.
+
+EXTRA PRIVACY FOR RECORDING 1 (mask or cut, every frame)
+- Email in the "Your wallet" box, name at the top right, members'
+  names on the Dashboard, the Zoom link in the banner, every wallet
+  address (keep only the first and last characters), every balance
+  (cards, Bellver wallet, MetaMask), lifetime deposits and spending.
+
 MTG's NOTES, PART 2 (15 Nov 2026)
 - In My Wallet, lower down, the linked MetaMask wallet now shows with
   its own balance; MTG cross-checked it against MetaMask itself and
