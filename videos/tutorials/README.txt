@@ -76,7 +76,8 @@ PRIVACY (mask in every frame)
 RECORDING 1 RECEIVED (15 Nov 2026): 11:11, desktop screen 1264 x 624,
 silent. Kept outside the repository (raw recordings never go in it).
 MAP (source time: what it shows: keep / cut)
-0:00-0:19  Dashboard, top: announcement banner, members list   keep short
+0:00-0:19  Dashboard, top: announcement banner, members list   keep short,
+           cover the dated webinar banner (the video must not look dated)
 0:20-0:22  Withdraw page, quick look before going back        cut
 0:23-0:25  "Live webinar on Tuesday" pop-up                   cut
 0:26-1:07  Dashboard, bottom row of four boxes; points at
