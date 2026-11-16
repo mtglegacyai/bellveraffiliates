@@ -129,8 +129,7 @@ MAP (source time: what it shows: keep / cut)
 9:58-11:11 My Wallet again, switching wallets, MetaMask      trim
 
 WHAT RECORDING 1 SHOWS ABOUT WHERE THE PAYOUT GOES
-- "PAY TO" on the request is the Bellver wallet (the address that
-  ends in 6611), with the line "Your Bellver wallet. Sent here once
+- "PAY TO" on the request is the Bellver wallet, with the line "Your Bellver wallet. Sent here once
   an admin approves it."
 - Linking MetaMask afterwards puts MetaMask on top of the "Your
   wallet" box and moves the Bellver wallet to "My other wallets".
