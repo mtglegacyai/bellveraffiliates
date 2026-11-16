@@ -183,7 +183,7 @@ wallet), not to the linked MetaMask.
    "Top up", "Approve in your wallet", entered his password, "Unlock
    and pay". Confirmation: "Top up card: Send USDT from your embedded
    wallet to top up your card". "Done". The card balance goes up.
-   Script fact: the 3.9% top-up fee comes out of the amount loaded.
+   Script fact: the 3.9% top-up fee is added on top (checked 16 Nov 2026).
 6. Send the rest out: My Wallet > "Send" > USDT, network BNB Smart
    Chain. In MetaMask, copy the BNB Smart Chain address, paste it as
    the recipient, enter the amount (everything), "Preview
@@ -236,9 +236,10 @@ MAP (source time: what it shows: keep / cut)
 FINDING (16 Nov 2026): THE 3.9% TOP-UP FEE IS ADDED ON TOP
 The top-up screen shows "Added to card $10.00, Top-up fee (3.9%)
 + $0.39, Total to send 10.39 USDT", and the card went up by the full
-$10.00. Since 25 Oct the website says the fee comes out of the amount
-loaded ("load $100 and $96.10 reaches your card"). Script the video
-from the screen; ask MTG before changing the website.
+$10.00. From 25 Oct to 16 Nov the website said the fee comes out of the
+amount loaded; on 16 Nov MTG approved correcting it, and every site, clone
+and Quick Guide PDF now says the fee is added on top (load $100 and
+$103.90 leaves your wallet).
 
 PLAN (MTG, 15 Nov 2026)
 - Two silent recordings: recording 1 now (request the payout, link
