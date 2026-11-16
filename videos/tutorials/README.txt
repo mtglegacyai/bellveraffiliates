@@ -162,6 +162,39 @@ MTG's NOTES, PART 2 (15 Nov 2026)
   address is now connected. This is his expectation, not confirmed:
   his second recording (after approval) will show what really happens.
 
+MTG's NOTES FOR RECORDING 2 (16 Nov 2026, after approval)
+Confirmed: the payout went to the Dynamic Wallet (the Fireblocks
+wallet), not to the linked MetaMask.
+1. Log in: a message greets him, "Deposit received [amount]. Your
+   wallet has been topped up." Tap "Awesome".
+2. Dashboard: the yellow box "Current balance in my Dynamic Wallet"
+   now shows the payout. Tapping the yellow box, or "My Wallet" in
+   the left menu, opens the same My Wallet page. The balance can take
+   a moment to load (slow network: cut the wait and his fiddling).
+3. My Wallet: above the wallet sits a short video ("My Wallet":
+   password and private key, 2 min). Mention it: watch it to
+   understand how the Dynamic Wallet (Fireblocks) works.
+4. Two buttons: "Deposit" and "Send". Send moves the money out to
+   your own wallet: MetaMask, Binance, Kraken and so on.
+5. Optional, short (Tutorial 6 covers top-ups in full): use part of
+   it on your card. "My Cards" > "Top up card": shows "Wallet
+   available", the Dynamic Wallet selected, the card balance, and the
+   minimum ($10) and maximum for your card level. He typed 10, tapped
+   "Top up", "Approve in your wallet", entered his password, "Unlock
+   and pay". Confirmation: "Top up card: Send USDT from your embedded
+   wallet to top up your card". "Done". The card balance goes up.
+   Script fact: the 3.9% top-up fee comes out of the amount loaded.
+6. Send the rest out: My Wallet > "Send" > USDT, network BNB Smart
+   Chain. In MetaMask, copy the BNB Smart Chain address, paste it as
+   the recipient, enter the amount (everything), "Preview
+   transaction": check the address and the network, "Confirm".
+   "Transaction successfully sent", "balance may take up to 30
+   seconds to refresh", "Done".
+7. Success check: MetaMask shows the money within about a minute.
+   The Dynamic Wallet is back to zero.
+Mask: every amount and balance, every address, the password.
+Then: combine recordings 1 and 2 into ONE short tutorial video.
+
 PLAN (MTG, 15 Nov 2026)
 - Two silent recordings: recording 1 now (request the payout, link
   MetaMask), recording 2 after the admin approves (where the money
@@ -171,9 +204,8 @@ PLAN (MTG, 15 Nov 2026)
   clear tutorial video that shows every step of requesting a
   withdrawal from Bellver.
 
-OPEN QUESTIONS (MTG will come back with these)
-- Where the approved payout lands (Bellver wallet, linked MetaMask or
-  both): script it only from what recording 2 shows.
+OPEN QUESTIONS
+- Answered 16 Nov 2026: the payout lands in the Dynamic Wallet.
 - Show his real earnings amounts or blur them? Real earnings on screen
   count as earnings proof: fine on his websites and the WhatsApp tribe,
   not for TikTok, YouTube or Facebook.
