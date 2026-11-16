@@ -195,6 +195,51 @@ wallet), not to the linked MetaMask.
 Mask: every amount and balance, every address, the password.
 Then: combine recordings 1 and 2 into ONE short tutorial video.
 
+RECORDING 2 RECEIVED (16 Nov 2026): 9:24, desktop 1264 x 624, silent.
+MAP (source time: what it shows: keep / cut)
+0:00-0:33  "DEPOSIT RECEIVED +[amount] USDT on BNB Chain. Your wallet
+           has been topped up." "Awesome", "View transaction"    keep
+0:34-1:10  Dashboard: yellow box "Current balance in my Dynamic
+           Wallet" shows the payout                              keep
+1:19-1:58  My Wallet loading slowly (shows $0.00 at first)        cut
+2:08-2:10  Webinar pop-up                                         cut
+2:11-2:12  Dashboard: "Lifetime Direct Commissions", "Earnings
+           Available" now $0.00                                  keep
+2:21-3:06  My Wallet: the 2 min wallet video at the top; "Your
+           wallet", Total balance, "Deposit", "Send"             keep
+3:32-3:38  My Cards: card, "Details", "Top Up", "Freeze",
+           "Settings", Transactions (shop names: mask)           keep
+3:41-4:20  "Top up card": AMOUNT, APPROVE, CONFIRM, DONE. "Send USDT
+           from your embedded wallet to top up your card." Card
+           balance, Wallet available, "Amount to add to card
+           (USD)", Max, network BNB Chain, token USDT, "Network fee
+           paid for you", breakdown: Added to card $10.00, Top-up
+           fee (3.9%) + $0.39, Total to send 10.39 USDT          keep
+4:22-5:22  "Approve in your wallet" ("Nothing leaves your wallet
+           until it's signed"), wallet password, "Unlock and pay"
+           (mask the password)                                   keep, trim
+6:01       DONE: "+ $10.00", card balance after, "Done"           keep
+6:20-6:35  My Cards and My Wallet after the top-up               trim
+6:48-7:02  MetaMask unlock (password: CUT) and MetaMask home      cut
+7:21-7:53  "Send": "Select any token" Tether USD, "USDT Enter
+           amount", available, "Recipient Address", "Preview
+           transaction"; preview: Send, Interacting with, Network
+           BNB Smart Chain, Network Fee <$0.01, Total, "Confirm"  keep
+8:04-8:16  "Transaction successfully sent to [address]", "Your
+           balance may take up to 30s to refresh", "View
+           transaction", "Done"                                  keep
+8:23-8:25  Webinar pop-up                                         cut
+8:36-8:51  MetaMask: balance goes up; Tokens: "Tether USD
+           [amount] USDT", Network: BNB Chain                    keep (success)
+8:55-9:24  Dashboard: Dynamic Wallet back to zero, card balance    keep short
+
+FINDING (16 Nov 2026): THE 3.9% TOP-UP FEE IS ADDED ON TOP
+The top-up screen shows "Added to card $10.00, Top-up fee (3.9%)
++ $0.39, Total to send 10.39 USDT", and the card went up by the full
+$10.00. Since 25 Oct the website says the fee comes out of the amount
+loaded ("load $100 and $96.10 reaches your card"). Script the video
+from the screen; ask MTG before changing the website.
+
 PLAN (MTG, 15 Nov 2026)
 - Two silent recordings: recording 1 now (request the payout, link
   MetaMask), recording 2 after the admin approves (where the money
