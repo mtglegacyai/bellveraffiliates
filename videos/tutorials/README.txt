@@ -15,8 +15,9 @@ Every video opens on its own thumbnail for the first second (17 Oct 2026),
 so shared files show the thumbnail instead of a black first frame.
 New videos: run the same thumbnail opener before uploading.
 
-07-request-a-withdrawal.mp4                 (preview v1 built 16 Nov 2026, 4:29,
-                                             waiting for MTG's approval)
+07-request-a-withdrawal.mp4                 (live on MTG's pages, 16 Nov 2026, 4:32;
+                                             client sites later: Dr RaShon's copy
+                                             must use HER voice)
 
 ------------------------------------------------------------------------
 NOTES FOR 07: REQUEST A WITHDRAWAL (MTG's spoken notes, 15 Nov 2026)
