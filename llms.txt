@@ -10,6 +10,7 @@ Key facts (from Bellver's official price list and compensation plan, version 08/
 - Funds sit in the cardholder's own non-custodial Fireblocks wallet, protected by their private key.
 - Most benefits: Gold ($250,000 daily and $20,000 per transaction limits, monthly rewards on up to 20 levels as stars grow), $1,400 virtual or $1,800 physical. Business and Gold are Special Edition cards with protected personal data; Basic and Premium are regulated cards to the European and U.S. standard.
 - Referral commissions (one-time, on 4 levels, Bellver's figures for physical cards): Basic $25, $20, $10, $10; Premium $60, $30, $20, $10; Business $150, $100, $100, $100; Gold $500, $400, $200, $200. Without a card of your own: level 1 only.
+- Bellver affiliate websites by MTG: your own copy of this guide with your name, photo, contact buttons and referral link, $100 one-time in USDT (BEP-20), paid only after you have tested it and are happy, free updates included: https://bellveraffiliates.com/#your-website
 - Monthly rewards: 0.1% of completed top-ups in the cardholder's 2x2 matrix, for those holding Premium or higher with two direct Premium+ referrals, who load at least $100 onto their own card that month. Missing it three months in a row loses the matrix position. Rewards are never guaranteed.
 
 Order link used on this site (MTG's referral link): https://app.bellvercards.com?ref=mtg
