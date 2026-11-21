@@ -222,9 +222,19 @@
  ]
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="/images/bellver-card-black-visa.webp" fetchpriority="high">
+<link rel="preload" href="/assets/fonts/manrope-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/anton-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/anton-latin-ext.woff2?v=1) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/anton-latin.woff2?v=1) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/manrope-latin-ext.woff2?v=1) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/manrope-latin.woff2?v=1) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/manrope-latin-ext.woff2?v=1) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/manrope-latin.woff2?v=1) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/manrope-latin-ext.woff2?v=1) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/manrope-latin.woff2?v=1) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+html:root{--faint:#768e82}
+</style>
 <link rel="stylesheet" href="/assets/bellver.css?v=ff0b1fa8">
 <link rel="stylesheet" href="/assets/bv-cards3d.css?v=efc1f66a">
 
@@ -239,7 +249,7 @@
    <span class="by">Bellver Cards<b>by <span class="aff-l">Affiliate</span><abbr class="aff-s" title="Affiliate">AFF</abbr> MTG 👑</b></span>
   </a>
   <div class="hdr-act">
-   <a class="btn btn-ghost btn-sm learn-btn" href="/learn/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H19v15H5.5A1.5 1.5 0 0 0 4 19.5v-15zM4 19.5A1.5 1.5 0 0 0 5.5 21H19"/><path d="M8 7h7"/></svg>Learn more</a>
+   <a class="btn btn-ghost btn-sm learn-btn" href="/learn/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H19v15H5.5A1.5 1.5 0 0 0 4 19.5v-15zM4 19.5A1.5 1.5 0 0 0 5.5 21H19"/><path d="M8 7h7"/></svg>Card guide</a>
    <a class="btn btn-go btn-sm" href="https://app.bellvercards.com?ref=mtg" target="_blank" rel="sponsored noopener">Order your card</a>
   </div>
  </div>
@@ -257,15 +267,15 @@
     </div>
    </div>
    <div class="hero-vid rv">
-    <div class="player mx-video mx-herovid mfit" id="p-hero-video" role="button" tabindex="0" aria-label="Play: Your bank card cannot do this! The Bellver Card, a video by MTG" data-src="https://media.bellveraffiliates.com/videos/mtg-bellver-card-ad.mp4?v=fe70f73d" data-title="Your bank card cannot do this! The Bellver Card, a video by MTG">
-     <img src="/images/mtg-bellver-card-ad-thumbnail.webp?v=b5ff8669" alt="Your bank card cannot do this! The Bellver Card, a video by MTG, video thumbnail" width="1280" height="720" fetchpriority="high">
+    <div class="player mx-video mx-herovid mfit" id="p-hero-video" role="button" tabindex="0" aria-label="Play: Your bank card cannot do this! The Bellver Card, a video by MTG, 0:36" data-src="https://media.bellveraffiliates.com/videos/mtg-bellver-card-ad.mp4?v=fe70f73d" data-title="Your bank card cannot do this! The Bellver Card, a video by MTG">
+     <img src="/images/mtg-bellver-card-ad-thumbnail-640.webp" srcset="/images/mtg-bellver-card-ad-thumbnail-640.webp 640w, /images/mtg-bellver-card-ad-thumbnail-768.webp 768w, /images/mtg-bellver-card-ad-thumbnail-960.webp 960w, /images/mtg-bellver-card-ad-thumbnail.webp?v=b5ff8669 1280w" sizes="(max-width:860px) calc(100vw - 34px), 560px" alt="Your bank card cannot do this! The Bellver Card, a video by MTG, video thumbnail" width="1280" height="720" fetchpriority="high">
      <span class="pbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5L7 4.5z" fill="currentColor"/></svg></span><span class="plabel">0:36</span>
     </div>
     <p class="mx-vcap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>Watch my Bellver Card video</p>
    </div><div class="stage" data-tilt=".c-main" data-max="16" aria-hidden="true" hidden>
     <div class="glow"></div><div class="ring"></div><div class="ring"></div>
-    <div class="card3d c-back"><img src="/images/bellver-card-special-edition-700.webp" alt="" width="700" height="416"></div>
-    <div class="card3d c-main"><div class="float"><img src="/images/bellver-card-black-visa.webp" alt="" width="1087" height="654" fetchpriority="high"><span class="sweep"></span><span class="glare"></span></div></div>
+    <div class="card3d c-back"><img src="/images/bellver-card-special-edition-700.webp" alt="" width="700" height="416" loading="lazy"></div>
+    <div class="card3d c-main"><div class="float"><img src="/images/bellver-card-black-visa.webp" alt="" width="1087" height="654" loading="lazy"><span class="sweep"></span><span class="glare"></span></div></div>
     <div class="tagpill t1"><span class="dot"></span><span>Daily limit up to <b>$250,000</b></span></div>
     <div class="tagpill t2"><span class="dot"></span><span>From <b>$99</b> one-time</span></div>
    </div>
@@ -283,15 +293,15 @@
   <div class="vgrid">
    <div class="vcard rv">
     <div class="vmeta"><span class="dur">3<small>MIN</small></span><div><h3>Quick overview</h3><p>What the card is and why it is different</p></div></div>
-    <div class="player" id="v3" role="button" tabindex="0" aria-label="Play the 3-minute Bellver Card video" data-src="https://media.bellveraffiliates.com/videos/bellvercard-in-3minutes.mp4" data-title="Bellver Card in 3 minutes">
-     <img src="/images/bellver-card-3-minute-video-thumbnail-640.webp" srcset="/images/bellver-card-3-minute-video-thumbnail-640.webp 640w, /images/bellver-card-3-minute-video-thumbnail.webp 1280w" sizes="(max-width:860px) 100vw, 560px" alt="Man holding a black Bellver Card under the headline The card that can pay your bills" width="1280" height="720" loading="lazy">
+    <div class="player" id="v3" role="button" tabindex="0" aria-label="Play the 3-minute Bellver Card video, 3:31" data-src="https://media.bellveraffiliates.com/videos/bellvercard-in-3minutes.mp4" data-title="Bellver Card in 3 minutes">
+     <img src="/images/bellver-card-3-minute-video-thumbnail-640.webp" srcset="/images/bellver-card-3-minute-video-thumbnail-640.webp 640w, /images/bellver-card-3-minute-video-thumbnail-768.webp 768w, /images/bellver-card-3-minute-video-thumbnail-960.webp 960w, /images/bellver-card-3-minute-video-thumbnail.webp 1280w" sizes="(max-width:860px) calc(100vw - 34px), 560px" alt="Man holding a black Bellver Card under the headline The card that can pay your bills" width="1280" height="720" loading="lazy">
      <span class="pbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5L7 4.5z" fill="currentColor"/></svg></span><span class="plabel">3:31</span>
     </div>
    </div>
    <div class="vcard rv" style="--d:.1s">
     <div class="vmeta"><span class="dur">27<small>MIN</small></span><div><h3>Full presentation</h3><p>Card, wallet, prices and rewards, explained</p></div></div>
-    <div class="player" role="button" tabindex="0" aria-label="Play the 27-minute Bellver Card presentation" data-yt="_Ptm2Bj6gm4" data-title="Bellver Card explained in 27 minutes" data-more="/videos/#explained">
-     <img src="/images/bellver-card-explained-27-minutes-thumbnail-640.webp" srcset="/images/bellver-card-explained-27-minutes-thumbnail-640.webp 640w, /images/bellver-card-explained-27-minutes-thumbnail.webp 1280w" sizes="(max-width:860px) 100vw, 560px" alt="Beach celebration in front of a Bellver Card sign with the slogan Let's make it happen" width="1280" height="720" loading="lazy">
+    <div class="player" role="button" tabindex="0" aria-label="Play the 27-minute Bellver Card presentation, 27 min" data-yt="_Ptm2Bj6gm4" data-title="Bellver Card explained in 27 minutes" data-more="/videos/#explained">
+     <img src="/images/bellver-card-explained-27-minutes-thumbnail-640.webp" srcset="/images/bellver-card-explained-27-minutes-thumbnail-640.webp 640w, /images/bellver-card-explained-27-minutes-thumbnail-768.webp 768w, /images/bellver-card-explained-27-minutes-thumbnail-960.webp 960w, /images/bellver-card-explained-27-minutes-thumbnail.webp 1280w" sizes="(max-width:860px) calc(100vw - 34px), 560px" alt="Beach celebration in front of a Bellver Card sign with the slogan Let's make it happen" width="1280" height="720" loading="lazy">
      <span class="pbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5L7 4.5z" fill="currentColor"/></svg></span><span class="plabel">27 min</span>
     </div>
    </div>
@@ -334,8 +344,8 @@
 </section><section class="sec" style="padding-top:0">
  <div class="wrap split">
   <div class="media-duo rv">
-   <figure class="media" style="margin:0"><img src="/images/bellver-virtual-card-apple-pay-google-pay.webp" alt="Paying contactless with a Bellver virtual Mastercard on a smartphone" width="1000" height="566" loading="lazy"></figure>
-   <figure class="media" style="margin:0"><img src="/images/bellver-card-nfc-ring-contactless-payment.webp" alt="Paying at a card terminal with an NFC ring linked to a Bellver card" width="1000" height="715" loading="lazy"></figure>
+   <figure class="media" style="margin:0"><img src="/images/bellver-virtual-card-apple-pay-google-pay-640.webp" srcset="/images/bellver-virtual-card-apple-pay-google-pay-640.webp 640w, /images/bellver-virtual-card-apple-pay-google-pay.webp 1000w" sizes="(max-width:860px) 92vw, 480px" alt="Paying contactless with a Bellver virtual Mastercard on a smartphone" width="1000" height="566" loading="lazy"></figure>
+   <figure class="media" style="margin:0"><img src="/images/bellver-card-nfc-ring-contactless-payment-480.webp" srcset="/images/bellver-card-nfc-ring-contactless-payment-480.webp 480w, /images/bellver-card-nfc-ring-contactless-payment.webp 1000w" sizes="(max-width:860px) 50vw, 280px" alt="Paying at a card terminal with an NFC ring linked to a Bellver card" width="1000" height="785" loading="lazy"></figure>
   </div>
   <div class="rv" style="--d:.1s">
    <h2 class="h2">Skip the post. <em>Go virtual.</em></h2>
@@ -390,8 +400,8 @@
 </div>
  </div>
 </section><section class="sec-tight" id="affiliate-explained"><div class="wrap split">
-<div class="rv"><div class="player mx-video mx-herovid mfit" id="p-aff-home" role="button" tabindex="0" aria-label="Play: The Bellver affiliate program, explained" data-src="https://media.bellveraffiliates.com/videos/bellver-affiliate-program-explained.mp4" data-title="The Bellver affiliate program, explained" data-more="/explainers/#affiliate-explained">
-<img src="/images/bellver-affiliate-program-explainer-thumbnail-640.webp" srcset="/images/bellver-affiliate-program-explainer-thumbnail-640.webp 640w, /images/bellver-affiliate-program-explainer-thumbnail.webp 1280w" sizes="(max-width:860px) 100vw, 560px" alt="The Bellver affiliate program, explained: explainer video thumbnail" width="1280" height="720" loading="lazy">
+<div class="rv"><div class="player mx-video mx-herovid mfit" id="p-aff-home" role="button" tabindex="0" aria-label="Play: The Bellver affiliate program, explained, 5:23" data-src="https://media.bellveraffiliates.com/videos/bellver-affiliate-program-explained.mp4" data-title="The Bellver affiliate program, explained" data-more="/explainers/#affiliate-explained">
+<img src="/images/bellver-affiliate-program-explainer-thumbnail-640.webp" srcset="/images/bellver-affiliate-program-explainer-thumbnail-640.webp 640w, /images/bellver-affiliate-program-explainer-thumbnail-768.webp 768w, /images/bellver-affiliate-program-explainer-thumbnail-960.webp 960w, /images/bellver-affiliate-program-explainer-thumbnail.webp 1280w" sizes="(max-width:860px) calc(100vw - 34px), 560px" alt="The Bellver affiliate program, explained: explainer video thumbnail" width="1280" height="720" loading="lazy">
 <span class="pbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5L7 4.5z" fill="currentColor"/></svg></span><span class="plabel">5:23</span>
 </div><p class="mx-vcap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="currentColor"/></svg>Watch the whole plan explained in 5 minutes</p></div>
 <div class="rv" style="--d:.1s">
@@ -455,7 +465,7 @@
  <p class="fine rv" style="margin-top:16px">Bellver's PDFs in the documents section come from its November 2026 presentation. Earnings are never guaranteed: read the <a class="inl" href="https://www.musathegiant.com/earnings-disclaimer.html">Earnings Disclaimer</a>.</p>
 </div></section><section class="sec-tight" style="padding-top:0"><div class="wrap"><div class="panel learnband rv">
   <div><h2 class="h2">Want the <em>full picture?</em></h2><p class="lead" style="margin-top:12px">Wallet and security, every price and fee, the rewards rules, a step-by-step setup guide, tutorial videos and the official PDFs. All in one place.</p></div>
-  <div class="btn-row"><a class="btn btn-go" href="/learn/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H19v15H5.5A1.5 1.5 0 0 0 4 19.5v-15zM4 19.5A1.5 1.5 0 0 0 5.5 21H19"/><path d="M8 7h7"/></svg>Learn more</a><a class="btn btn-ghost" href="/docs/bellver-card-price-list.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v12M7 10.5l5 5 5-5M4.5 20h15"/></svg>Price list (PDF)</a></div>
+  <div class="btn-row"><a class="btn btn-go" href="/learn/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H19v15H5.5A1.5 1.5 0 0 0 4 19.5v-15zM4 19.5A1.5 1.5 0 0 0 5.5 21H19"/><path d="M8 7h7"/></svg>Card guide</a><a class="btn btn-ghost" href="/docs/bellver-card-price-list.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v12M7 10.5l5 5 5-5M4.5 20h15"/></svg>Price list (PDF)</a></div>
  </div></div></section><section class="sec" style="padding-top:clamp(40px,6vw,70px)">
  <div class="wrap">
   <div class="sec-head center rv"><h2 class="h2">Three steps to <em>your card</em></h2></div>
@@ -491,7 +501,7 @@
   <figcaption style="margin-top:16px;color:var(--muted);font-size:.95rem"><b style="color:var(--text)">William</b>, Bellver partner, November 2026</figcaption>
  </figure>
 </div></section><section class="sec-tight"><div class="wrap"><div class="panel help bv-glass soft rv">
-  <div class="face"><img src="/images/mtg-profile.jpg?v=9dce6367" alt="MTG, Musa The Giant" width="88" height="88" loading="lazy"></div>
+  <div class="face"><img src="/images/mtg-profile-176.webp" srcset="/images/mtg-profile-176.webp 2x, /images/mtg-profile-264.webp 3x" alt="MTG, Musa The Giant" width="88" height="88" loading="lazy"></div>
   <div><h2>Stuck? I'll walk you through it.</h2><p>I'm MTG. Message me on WhatsApp or Telegram and I'll help you register, fund your wallet and choose the right card for you. Can't reach me on WhatsApp? Chat with me directly on Telegram.</p></div>
   <div class="help-btns"><a class="btn btn-wa" href="https://wa.me/27721714626?text=Hi%20MTG%2C%20I%20am%20interested%20in%20the%20Bellver%20Card.%20Can%20you%20help%20me%20get%20started%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.7 11.7 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4Zm-8.4 18.2h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8Zm5.4-7.3c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8.9-.9 1.1-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z" fill="currentColor" stroke="none"/></svg>WhatsApp MTG</a><a class="btn btn-tg" href="https://t.me/mtgtribe" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.6 3.4 2.9 10.6c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.4-1.5ZM9.8 14.4l-.4 4 -1.4-4.6 10.1-6.4-8.3 7Z" fill="currentColor" stroke="none"/></svg>Telegram MTG</a></div>
  </div></div></section><section class="sec" style="padding-top:0">
@@ -503,7 +513,7 @@
   <img class="mini" src="/images/bellver-card-black-visa-640.webp" alt="Black Bellver Visa Business card" width="640" height="385" loading="lazy">
   <h2>Let's make it <span class="hap">happen</span></h2>
   <p class="lead">Order your Bellver Card from $99. Go virtual and you can start paying today.</p>
-  <div class="btn-row"><a class="btn btn-go" href="https://app.bellvercards.com?ref=mtg" target="_blank" rel="sponsored noopener">Order your card</a><a class="btn btn-ghost" href="/learn/">Learn more</a></div>
+  <div class="btn-row"><a class="btn btn-go" href="https://app.bellvercards.com?ref=mtg" target="_blank" rel="sponsored noopener">Order your card</a><a class="btn btn-ghost" href="/learn/">Read the card guide</a></div>
  </div></div></div></section>
 </main>
 <footer class="ftr">
