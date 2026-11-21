@@ -305,9 +305,11 @@ onScroll();
   /* payback tool */
   $$('.tool[data-calc="payback"]').forEach(function(T){
     var PRICE={basic:99,premium:270,business:490,gold:990}, COM={basic:10,premium:100,business:200,gold:400}, COMSE={basic:10,premium:150,business:300,gold:500};
-    var mine=$('[name=mine]',T), theirs=$('[name=theirs]',T), se=$('[name=se]',T), n=$('[name=n]',T), o=function(k){return $('[data-o="'+k+'"]',T);};
+    /* data-plan="2026-11": Bellver's November 2026 prices (virtual or physical) and level 1 commissions; pages without it keep the 08/2026 plan */
+    var NOV=T.getAttribute('data-plan')==='2026-11', PRICE_N={v:{basic:99,premium:270,business:650,gold:1400},p:{basic:290,premium:450,business:950,gold:1800}}, COM_N={basic:25,premium:60,business:150,gold:500};
+    var mine=$('[name=mine]',T), theirs=$('[name=theirs]',T), se=$('[name=se]',T), kind=$('[name=kind]',T), n=$('[name=n]',T), o=function(k){return $('[data-o="'+k+'"]',T);};
     function upd(){
-      var k=Math.max(0,Math.min(50,Math.round(+n.value||0))), price=PRICE[mine.value], per=(se.checked?COMSE:COM)[theirs.value], earned=per*k, left=price-earned;
+      var k=Math.max(0,Math.min(50,Math.round(+n.value||0))), price=NOV?PRICE_N[kind.value][mine.value]:PRICE[mine.value], per=NOV?COM_N[theirs.value]:(se.checked?COMSE:COM)[theirs.value], earned=per*k, left=price-earned;
       roll(o('earned'),earned,function(x){return '$'+fmt(x);}); roll(o('price'),price,function(x){return '$'+fmt(x);});
       var box=o('leftbox');
       if(left<=0){o('leftlab').textContent=left===0?'Your card is':'Covered, plus'; box.classList.add('ok'); box.classList.remove('warn');
@@ -315,11 +317,14 @@ onScroll();
       else {o('leftlab').textContent='Still to cover'; box.classList.add('warn'); box.classList.remove('ok'); roll(o('left'),left,function(x){return '$'+fmt(x);});}
       var pct=Math.min(100,earned/price*100); o('bar').style.width=pct+'%'; o('pct').textContent=Math.round(pct)+'%';
       var need=Math.ceil(price/per);
-      o('how').textContent=k+' × $'+per+' = $'+fmt(earned)+' earned. '+(left<=0?('$'+fmt(earned)+' minus your $'+price+' card = '+(left===0?'exactly covered.':'$'+fmt(-left)+' to spare.')):('$'+price+' card minus $'+fmt(earned)+' = $'+fmt(left)+' still to cover. You need '+need+' referral'+(need===1?'':'s')+' at this level.'));
+      o('how').textContent=k+' × $'+per+' = $'+fmt(earned)+' earned. '+(left<=0?('$'+fmt(earned)+' minus your $'+fmt(price)+' card = '+(left===0?'exactly covered.':'$'+fmt(-left)+' to spare.')):('$'+fmt(price)+' card minus $'+fmt(earned)+' = $'+fmt(left)+' still to cover. You need '+need+' referral'+(need===1?'':'s')+' at this level.'));
     }
-    wireSpin(T,upd); [mine,theirs,se].forEach(function(el){el.addEventListener('change',upd);});
+    wireSpin(T,upd); [mine,theirs,se,kind].forEach(function(el){if(el)el.addEventListener('change',upd);});
     var def=(T.getAttribute('data-def')||'business,business,3,0').split(',');
-    $('[data-reset]',T).addEventListener('click',function(){mine.value=def[0]; theirs.value=def[1]; n.value=def[2]; se.checked=def[3]==='1'; n._paint(); upd();});
+    $('[data-reset]',T).addEventListener('click',function(){
+      if(NOV){mine.value=def[0]; kind.value=def[1]; theirs.value=def[2]; n.value=def[3];}
+      else {mine.value=def[0]; theirs.value=def[1]; n.value=def[2]; se.checked=def[3]==='1';}
+      n._paint(); upd();});
     upd();
   });
   /* tables that turn into cards on phones */
