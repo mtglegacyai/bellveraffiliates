@@ -38,7 +38,8 @@ Order link used on this site (MTG's referral link): https://app.bellvercards.com
 
 - [The Bellver 2x2 matrix explained (by MTG)](https://bellveraffiliates.com/docs/bellver-2x2-matrix-explained-by-mtg.pdf)
 - [Bellver Card compensation plan (official, November 2026)](https://bellveraffiliates.com/docs/bellver-card-compensation-plan.pdf)
-- [Bellver Card presentation slides (official)](https://bellveraffiliates.com/docs/bellver-card-presentation.pdf)
+- [Bellver Card presentation slides (official)](https://bellveraffiliates.com/docs/bellver-card-presentation-v2.pdf)
+- [Bellver Card presentation, animated PowerPoint (official)](https://media.bellveraffiliates.com/download/docs/bellver-card-presentation.pptx)
 - [Bellver Card price list (official, November 2026)](https://bellveraffiliates.com/docs/bellver-card-price-list.pdf)
 - [bellver card quick guide by mtg](https://bellveraffiliates.com/docs/bellver-card-quick-guide-by-mtg.pdf)
 - [Bellver Starter Checklist (by MTG)](https://bellveraffiliates.com/docs/bellver-starter-checklist.pdf)
